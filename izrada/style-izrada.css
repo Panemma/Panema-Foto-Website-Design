@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+#header {
+    margin: 0;
+    height: 330px;
+    background-image: url(../pics/swan.jpg);
+    background-size: 135%;
+    background-position: center 26%;   
+    font-size: 9em;   
+    font-weight: 20; 
+    text-align: center;
+    align-content: center;
+    animation: move-header 30s linear infinite;
+}
+
+@keyframes move-header {
+    0% {
+        background-position: center 100%;
+    }
+    
+    12.5% {
+        background-position: center 65%;
+    }
+    
+    25% {
+        background-position: center 30%;
+    }
+    37.5% {
+        background-position: center 0.1%;
+    }
+    
+    75% {
+        background-position: center 30%;
+    } 
+    100% {
+        background-position: center 75%;
+    } 
+}
+
+h1 {
+    color:rgb(7, 6, 6);
+    
+}
+
+.nav {
+    display: flex;
+    height: 50px;
+    margin: 20px 0 20px 0; 
+}
+
+.nav div {
+    background-color:rgb(252, 241, 216);
+    border-top: solid 3px black;
+    flex-basis: 33.3%;
+    text-align: center;
+    align-content: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8em;
+
+}
+
+a:hover {
+    color: rgb(199, 70, 15);
+
+}
+
+.nav div:hover {
+    transform: scale(1.1, 1.1);
+    border-radius: 5%;
+}
+
+#home a:active, #life a:active, #works a:active, #gallery a:active {
+    color: rgba(7, 114, 105, 0.875);
+}
+
+.quote-one {
+    background-image: url(../pics/chirico-self.jpg);
+    margin: 100px auto 100px auto;
+    height: 50px;
+    font-style: italic;
+    font-size: 2.8em;
+    text-align: center;
+}
+
+.main {
+    background-color:rgba(252, 241, 216, 0.299);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.divs {
+    border: solid 1px rgba(231, 223, 223, 0.071);
+    flex-basis: 47%;
+    height: 550px;
+    margin: 2% 0 0 0;
+    font-size: 1.5em;
+    text-align: justify;
+    align-content: center;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+.footer {
+margin: 160px 0 20px 0;
+background-color: rgba(0, 0, 0, 0.075);
+text-align: center;
+align-content: center;
+background-image: url(../pics/chirico-self.jpg);
+background-repeat: no-repeat;
+background-position: center 59%;   
+height: 150px;
+animation: move-footer 250s infinite;
+}
+
+@keyframes move-footer {
+0% {
+    background-position: center 0.1%;
+}
+
+25% {
+    background-position: center 35%;
+}
+
+50% {
+    background-position: center 70%;
+}
+75% {
+    background-position: center 95%;
+}
+
+100% {
+    background-position: center 59%;
+}
+
+
+}
+
+.footer p {
+    font-style: italic;
+    font-size: 2em;
+    text-align: center;
+    align-content: center;
+}
+
+#two img, #three img, #six img, #seven img, #ten img {
+    display: block;
+    width: 95%;
+    margin-top: 0px;
+}
+
+
+
+#two, #three, #six, #seven {
+    text-align: center;
+    color:rgba(0, 0, 0, 0)
+ }
+#two:hover, #three:hover, #six:hover, #seven:hover {
+    opacity: 1;
+    color: rgb(0, 0, 0);
+}
+
+
+
